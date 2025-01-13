@@ -1,0 +1,129 @@
+{
+  "doctors": [
+    {
+      "id": "d1",
+      "name": "Dr. Sarah Smith",
+      "username": "dr.smith",
+      "password": "smith123",
+      "position": "Cardiologist",
+      "department": "Cardiology",
+      "patients": ["p1", "p2"],
+      "recommendations": {
+        "p1": [
+          {
+            "type": "medication",
+            "text": "Remember to take your blood pressure medication twice daily"
+          },
+          {
+            "type": "exercise",
+            "text": "Aim for 30 minutes of walking each day"
+          }
+        ]
+      },
+      "notes": {
+        "p1": "You are doing good so let continue this process for next week also, and in the end of the next week I will schedule a online meet."
+      }
+    },
+    {
+      "id": "d2",
+      "name": "Dr. James Wilson",
+      "username": "dr.wilson",
+      "password": "wilson123",
+      "position": "Neurologist",
+      "department": "Neurology",
+      "patients": ["p3"],
+      "recommendations": {
+        "p3": [
+          {
+            "type": "medication",
+            "text": "Take migraine medication at first sign of symptoms"
+          }
+        ]
+      }
+    }
+  ],
+  "patients": [
+    {
+      "id": "p1",
+      "name": "John Doe",
+      "username": "john.doe",
+      "password": "patient123",
+      "assignedDoctor": "d1",
+      "healthMetrics": {
+        "temperature": {
+          "value": "98.6",
+          "unit": "°F",
+          "status": "Normal"
+        },
+        "heartRate": {
+          "value": 72,
+          "unit": "BPM",
+          "status": "Normal"
+        },
+        "airQuality": {
+          "value": "Good",
+          "status": "Safe"
+        },
+        "steps": {
+          "value": 8459,
+          "status": "Almost there!"
+        }
+      },
+      "activityProgress": {
+        "dailySteps": [7500, 8200, 7800, 8459, 7900, 8100, 8300],
+        "weeklyGoal": 10000
+      },
+      "treatmentHistory": [
+        {
+          "date": "2025-01-15",
+          "type": "Check-up",
+          "doctor": "Dr. Smith",
+          "notes": "Regular monthly check-up",
+          "status": "Completed"
+        },
+        {
+          "date": "2025-01-10",
+          "type": "Blood Test",
+          "doctor": "Dr. Johnson",
+          "notes": "Routine blood work",
+          "status": "Processing"
+        }
+      ],
+      "medicalHistory": {
+        "conditions": ["Hypertension"],
+        "medications": ["Lisinopril"]
+      }
+    },
+    {
+      "id": "p2",
+      "name": "Jane Smith",
+      "username": "jane.smith",
+      "password": "patient456",
+      "assignedDoctor": "d1",
+      "healthMetrics": {
+        "temperature": {
+          "value": "98.2",
+          "unit": "°F",
+          "status": "Normal"
+        },
+        "heartRate": {
+          "value": 68,
+          "unit": "BPM",
+          "status": "Normal"
+        },
+        "airQuality": {
+          "value": "Good",
+          "status": "Safe"
+        },
+        "steps": {
+          "value": 9200,
+          "status": "Great progress!"
+        }
+      },
+      "medicalHistory": {
+        "conditions": ["Migraine"],
+        "medications": ["Sumatriptan"]
+      }
+    }
+  ]
+}
